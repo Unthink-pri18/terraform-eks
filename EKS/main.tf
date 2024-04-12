@@ -48,10 +48,10 @@ module "eks" {
     Terraform   = "true"
   }
 }
-data "aws_eks_cluster" "cluster" {
+data "aws_eks_cluster" "cluster_e" {
   name = module.eks.cluster_id
 }
 
-data "aws_eks_cluster_auth" "cluster" {
+data "aws_eks_cluster_auth" "cluster_ek" {
   name = module.eks.cluster_id
 }
